@@ -74,7 +74,7 @@ function loginToAzure {
 
 	Write-Host "Please login using Azure Government credentials." -ForegroundColor Yellow
 	
-	Login-AzureRmAccount -EnvironmentName "AzureCloud" -ErrorAction SilentlyContinue 	
+	#Login-AzureRmAccount -EnvironmentName "AzureCloud" -ErrorAction SilentlyContinue 	
 
 	if($?) {
 		Write-Host "Login Successful!" -ForegroundColor Green
