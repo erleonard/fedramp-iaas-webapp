@@ -74,7 +74,7 @@ function loginToAzure {
 
 	Write-Host "Please login using Azure Government credentials." -ForegroundColor Yellow
 	
-	Login-AzureRmAccount -EnvironmentName "AzureUSGovernment" -ErrorAction SilentlyContinue 	
+	Login-AzureRmAccount -EnvironmentName "AzureCloud" -ErrorAction SilentlyContinue 	
 
 	if($?) {
 		Write-Host "Login Successful!" -ForegroundColor Green
@@ -264,7 +264,7 @@ Write-Host "`n LOGIN TO AZURE `n" -foregroundcolor green
 
 function orchestration {
 	Param(
-		[string]$environmentName = "AzureUSGovernment",
+		[string]$environmentName = "AzureCloud",
 		[string]$location = "USGov Virginia",
 		[Parameter(Mandatory=$true)]
 		[string]$subscriptionId,
