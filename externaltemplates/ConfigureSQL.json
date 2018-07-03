@@ -26,6 +26,8 @@
     "sqlVmSize": {
       "type": "string",
       "allowedValues": [
+        "Standard_B2ms",
+        "Standard_D2_v3",
         "Standard_D1_v2",
         "Standard_D2_v2",
         "Standard_D3_v2",
