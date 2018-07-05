@@ -3,31 +3,28 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "environmentName": {
-            "value": "AzureUSGovernment"
+            "value": "AzureCloud"
         },
         "keyVaultName": {
-            "value": ""
+            "value": "RG-RAMPUP01-KV"
         },
         "keyVaultResourceGroupName": {
-            "value": ""
-        },
-        "numberOfWebInstances": {
-            "value": 2
+            "value": "RG-RAMPUP01"
         },
         "encryptionEnabled": {
             "value": true
         },
         "adVMSize": {
-            "value": "Standard_D1_v2"
+            "value": "Standard_A2_v2"
         },
         "webVMSize": {
-            "value": "Standard_D2_v2"
+            "value": "Standard_B2s"
         },
         "mgtVMSize": {
-            "value": "Standard_D1_v2"
+            "value": "Standard_B2s"
         },
         "sqlVMSize": {
-            "value": "Standard_D2_v2"
+            "value": "Standard_D2_v3"
         },
         "sqlServerVersion": {
             "value": "SQL2017-WS2016"
@@ -36,13 +33,13 @@
             "value": "Standard_GRS"
         },
         "templatesBaseUrl": {
-            "value": "https://raw.githubusercontent.com/Azure/fedramp-iaas-webapp/master/nestedtemplates"
+            "value": "https://raw.githubusercontent.com/erleonard/fedramp-iaas-webapp/master/nestedtemplates"
         },
         "dscBaseUrl": {
-            "value": "https://raw.githubusercontent.com/Azure/fedramp-iaas-webapp/master/DSC"
+            "value": "https://raw.githubusercontent.com/erleonard/fedramp-iaas-webapp/master/DSC"
         },
         "scriptsBaseUrl": {
-            "value": "https://raw.githubusercontent.com/Azure/fedramp-iaas-webapp/master/custom-scripts"
+            "value": "https://raw.githubusercontent.com/erleonard/fedramp-iaas-webapp/master/custom-scripts"
         },
         "gatewaySkuName": {
             "value": "WAF_Medium"
